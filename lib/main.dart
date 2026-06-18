@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
-import 'ecrans/splashecran.dart'; // تأكدي أن المسار يطابق مكان ملفاتك
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'features/auth/splashecran.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const TravviteApp());
 }
 
@@ -13,20 +21,16 @@ class TravviteApp extends StatelessWidget {
     return MaterialApp(
       title: 'Travvite',
       debugShowCheckedModeBanner: false,
-
-      // إعدادات الثيم العام للتطبيق ليتناسب مع "المود الاحترافي"
       theme: ThemeData(
         primaryColor: const Color(0xFF2B4C7E),
         scaffoldBackgroundColor: const Color(0xFFF8FAFC),
-        fontFamily: 'Cairo', // إذا أضفتِ الخط العربي لاحقاً
+        fontFamily: 'Cairo',
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF2B4C7E),
           primary: const Color(0xFF2B4C7E),
         ),
         useMaterial3: true,
       ),
-
-      // الشاشة التي سيبدأ منها التطبيق
       home: const Splash(),
     );
   }

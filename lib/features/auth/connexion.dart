@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'inscription.dart';
+import 'package:travvite_1/features/auth/inscription.dart';
 
 class Connexion extends StatefulWidget {
   const Connexion({super.key});

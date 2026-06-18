@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16779298545",
+    "project_id": "travvite",
+    "storage_bucket": "travvite.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16779298545:android:8e0b07eccec8df83608b50",
+        "android_client_info": {
+          "package_name": "com.example.travvite_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQaMlpXevda-xZit0BVJaxTwtKd6rRTZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
